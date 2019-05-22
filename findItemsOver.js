@@ -1,4 +1,4 @@
-function findItemsOver20(param){
+function findItemsOver(param){
 
     var items = [];
     for(var i=0;i<param.length;i++){
