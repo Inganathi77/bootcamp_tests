@@ -1,8 +1,10 @@
-describe('countAllTown' , function(){
-    it('should return the number of registration from Cape Town' , function(){
-        assert.equal(countAllFromTown('CA 182,CA 523,CA 812'), (3));
+describe('countAllFromTown' , function(){
+    it('should count the number of registration Town' , function(){
+        assert.deepEqual(countAllFromTown('CL 124,CY 567,CL 345, CJ 456,CL 341','CL'), 3);
+        
     });
-    it('should return the registration numbers from Paarl' , function(){
-        assert.equal(countAllFromTown('CY 523,CY 812'), (2));
+    it('should return nothing if the registration is not from Town' , function(){
+        assert.deepEqual(countAllFromTown('CA'), 0);
+        
     });
 });
