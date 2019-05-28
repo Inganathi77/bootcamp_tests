@@ -5,7 +5,7 @@ function mostProfitableDepartment(list){
         var theSales = list[i].department;
         if(theDay < theSales){
             theDay = theSales
-            theProf = theDepartments
+            theProf = department
         }
     }
             return theProf
